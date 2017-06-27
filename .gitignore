@@ -1,0 +1,14 @@
+### Ignore swap files
+*.swp
+
+### Ignore Eclipse IDE settings
+.classpath
+.project
+.settings/
+
+### Ignore IntelliJ IDE settings
+.idea/
+*.iml
+
+### Ignore products of maven build process
+/target/
