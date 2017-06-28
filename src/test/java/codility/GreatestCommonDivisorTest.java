@@ -1,10 +1,8 @@
 package codility;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
-import codility.GreatestCommonDivisor;
 
 public class GreatestCommonDivisorTest {
 
@@ -35,4 +33,22 @@ public class GreatestCommonDivisorTest {
 		assertEquals(2, greatestCommonDivisor.gcdIterative(8, 6));
 		assertEquals(2*3*3*5, greatestCommonDivisor.gcdIterative(2*2*3*3*5*5*5, 2*3*3*3*5*7));
 	}
+	
+	@Test
+	public void gcdEuclideanTest() {
+		GreatestCommonDivisor greatestCommonDivisor = new GreatestCommonDivisor();
+		assertEquals(0, greatestCommonDivisor.egcd(0, 0));
+		assertEquals(6, greatestCommonDivisor.egcd(0, 6));
+		assertEquals(6, greatestCommonDivisor.egcd(6, 0));
+		assertEquals(2, greatestCommonDivisor.egcd(6, 8));
+		assertEquals(2, greatestCommonDivisor.egcd(8, 6));
+		assertEquals(2*3*3*5, greatestCommonDivisor.egcd(2*2*3*3*5*5*5, 2*3*3*3*5*7));
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void gcdEuclideanTest2() {
+		GreatestCommonDivisor greatestCommonDivisor = new GreatestCommonDivisor();
+		assertEquals(2, greatestCommonDivisor.egcd(2, -4));
+	}	
+
 }

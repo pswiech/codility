@@ -3,12 +3,10 @@ package codility;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class AnagramTest {
 
-	@Ignore
 	@Test
 	public void testIsAnagram() {
 		assertFalse(new Anagram().isAnagram("xx", "xxx"));
