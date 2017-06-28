@@ -1,6 +1,6 @@
-package binary_gap;
+package codility;
 
-public class Solution {
+public class BinaryGap {
 
 	public int solution(final int n) {
 		if (n <= 0) {

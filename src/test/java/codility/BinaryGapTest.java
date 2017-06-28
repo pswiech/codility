@@ -1,17 +1,17 @@
-package binary_gap;
+package codility;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
 
-public class SolutionTest {
+public class BinaryGapTest {
 
-	private Solution solution;
+	private BinaryGap solution;
 
 	@Before
 	public void init() {
-		solution = new Solution();
+		solution = new BinaryGap();
 	}
 
 	@Test
